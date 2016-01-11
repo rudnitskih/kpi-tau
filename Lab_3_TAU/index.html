@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>LAB_1</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-8">
+				<div class="chart">
+
+				</div>
+				<div class="data">
+
+				</div>
+			</div>
+			<form class="controls col-xs-4">
+				<div class="input-group row controls__input_text">
+					<div class="col-xs-6">
+						<input type="number" class="form-control" name="frequency" value="1"></input>
+					</div>
+					<div class="col-xs-6">
+						<span>Частота АЦП в Гц</span>
+					</div>
+				</div>
+				<div class="input-group row controls__input_text">
+					<div class="col-xs-6">
+						<input type="number" class="form-control" name="capacity" value="8"></input>
+					</div>
+					<div class="col-xs-6">
+						<span>Розрядність АЦП в бітах</span>
+					</div>
+				</div>
+				<div class="input-group row controls__input_text">
+					<div class="col-xs-6">
+						<input type="number" class="form-control" name="min" value="0"></input>
+					</div>
+					<div class="col-xs-6">
+						<span>Мінімальне значення АЦП</span>
+					</div>
+				</div>
+				<div class="input-group row controls__input_text">
+					<div class="col-xs-6">
+						<input type="number" class="form-control" name="max" value="10"></input>
+					</div>
+					<div class="col-xs-6">
+						<span>Максимальне значення АЦП</span>
+					</div>
+				</div>
+				<div class="input-group row controls__input_text">
+					<div class="col-xs-6">
+						<input type="text" class="form-control" name="amplitude" value="0.2"></input>
+					</div>
+					<div class="col-xs-6">
+						<span>Амплітуда функції</span>
+					</div>
+				</div>
+				<div class="input-group row controls__input_text">
+					<div class="col-xs-6">
+						<input type="range" value="10" name="time" min="1" max="100" step="1" />
+					</div>
+					<div class="col-xs-6">
+						<span>Час функції</span>
+					</div>
+				</div>
+				<div class="input-group row controls__buttons">
+					<div class="col-xs-6">
+						<button type="button" class="btn btn-success controls__build">Побудова графіку</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
